@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="inputs">
+                <form action="#" id="login-form">
+                <label for="fullname">Full Name</label>
+                <input type="text" placeholder="Write here" id="fullname" name="fullname" autocomplete="on" aria-required="true" required>
+                <div class="error-fullname" aria-invalid="true"><span>This informations is Wrong</span></div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="example@gmail.com" id="email" name="email" autocomplete="on" aria-required="true" required>
+                <div class="error-email" aria-invalid="true"><span>This informations is Wrong</span></div>
+                <div class="password">
+                    <label for="password">Enter Password</label>
+                    <input type="password" placeholder="******" id="password" name="password" autocomplete="on" aria-required="true" required>
+                    <div class="icon1"><i class='bx bx-low-vision'></i></div>
+                    <div class="error-password" aria-invalid="true"><span>This informations is Wrong</span></div>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" placeholder="******" id="confirm-password" name="confirm-password" aria-required="true" required>
+                    <div class="icon2"><i class='bx bx-low-vision'></i></div>
+                    <div class="error-cpassword" aria-invalid="true"><span>This informations is Wrong</span></div>
+                    <input type="submit" value="Update Profile" aria-label="Submit your informations">
+                </form>
+                </div>
+            </div>
+            <div class="profile-completeness">
+                <div class="percentage">
+                    <span>0%</span>
+                </div>
+                <span>Profile completeness</span>
+                <div class="checkbox">
+                    <p>Create Account</p>
+                    <p>Update Roadmap Progress</p>
+                    <p>Setup Public Profile</p>
+                    <p>Complete your First Project</p>                
+                    <p>Invite your Friends</p>                
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
